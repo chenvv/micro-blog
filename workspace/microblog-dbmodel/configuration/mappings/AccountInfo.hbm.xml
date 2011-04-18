@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="AccountInfo"
+		table="account_info"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="ACCOUNT_ID"
+		>
+			<generator class="org.hibernate.id.Assigned"/>
+		</id>
+
+		<property
+			name="RealName"
+			column="REAL_NAME"
+			type="string"
+			not-null="false"
+			length="40"
+		/>
+		<property
+			name="Sex"
+			column="SEX"
+			type="java.lang.String"
+			not-null="false"
+			length="3"
+		/>
+		<property
+			name="Address"
+			column="ADDRESS"
+			type="string"
+			not-null="false"
+			length="255"
+		/>
+		<property
+			name="Birthday"
+			column="BIRTHDAY"
+			type="timestamp"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Homepage"
+			column="HOMEPAGE"
+			type="string"
+			not-null="false"
+			length="255"
+		/>
+		<property
+			name="Description"
+			column="DESCRIPTION"
+			type="string"
+			not-null="false"
+			length="400"
+		/>
+		<property
+			name="Mobile"
+			column="MOBILE"
+			type="string"
+			not-null="false"
+			length="15"
+		/>
+		<property
+			name="EmailAddress"
+			column="EMAIL_ADDRESS"
+			type="string"
+			not-null="true"
+			length="255"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

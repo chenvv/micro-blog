@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="LoginSessions"
+		table="login_sessions"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="SESSION_ID"
+		>
+			<generator class="identity"/>
+		</id>
+
+		<property
+			name="AccountId"
+			column="ACCOUNT_ID"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="UsefullLife"
+			column="USEFULL_LIFE"
+			type="timestamp"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="SessionStr"
+			column="SESSION_STR"
+			type="string"
+			not-null="true"
+			length="32"
+		/>
+		<property
+			name="OnlineFlag"
+			column="ONLINE_FLAG"
+			type="boolean"
+			not-null="true"
+			length="1"
+		/>
+		<property
+			name="NoSave"
+			column="NO_SAVE"
+			type="boolean"
+			not-null="true"
+			length="1"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

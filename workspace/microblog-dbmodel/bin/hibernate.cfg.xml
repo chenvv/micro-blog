@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- local connection properties -->
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:3306/microblogdb
+		</property>
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">admin</property>
+		<!-- property name="hibernate.connection.pool_size"></property -->
+		<!-- dialect for MySQL -->
+		<property name="dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.transaction.factory_class">
+			org.hibernate.transaction.JDBCTransactionFactory
+		</property>
+		<mapping resource="mappings/Account.hbm.xml" />
+		<mapping resource="mappings/AccountInfo.hbm.xml" />
+		<mapping resource="mappings/Blogs.hbm.xml" />
+		<mapping resource="mappings/BlogSettings.hbm.xml" />
+		<mapping resource="mappings/Event.hbm.xml" />
+		<mapping resource="mappings/Follow.hbm.xml" />
+		<mapping resource="mappings/Group.hbm.xml" />
+		<mapping resource="mappings/GroupUsers.hbm.xml" />
+		<mapping resource="mappings/LoginSessions.hbm.xml" />
+		<mapping resource="mappings/Messgaes.hbm.xml" />
+		<mapping resource="mappings/NoticeSettings.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

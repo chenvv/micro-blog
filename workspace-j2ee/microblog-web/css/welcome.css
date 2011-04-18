@@ -1,0 +1,58 @@
+* { margin:0; padding:0;}
+body {font:12px/1.75 Tahoma,Arial;background: #9fdfe9 url('../images/wel_bg.jpg') no-repeat center top;background-attachment: fixed; color:#333; line-height:180%;}
+img {border:0px; vertical-align:middle;}
+.fleft { float: left; }
+.input_text { border:#74c9e6 1px solid;font-size:12px; height:18px; padding:3px 4px; line-height:18px;color:#999}
+a {color:#247aac;text-decoration:none}
+a:hover {text-decoration:underline;}
+
+.main {width:950px; margin:0 auto 20px auto}
+.main .header {background:url('../images/logo.gif') no-repeat;width:320px;height:75px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='Public../images/logo.png');_background:none;margin:10px 0px;}
+.main .weltop {background:url('../images/wel_top.jpg') no-repeat;width:950px;height:274px;}
+.main .welbody {background:#ffffff url('../images/theme-titlebg.gif') repeat-x;width:950px;height:270px;padding-top:15px}
+.main .welbottom {background:url('../images/wel_bottom.gif') no-repeat;width:950px;height:16px;}
+.main .rightbox {width:270px;height:550px;position:absolute;margin-left:680px;}
+.main .rightbox .rightbox_1 {background:transparent url('../images/wel_right_1.gif') no-repeat;width:242px;height:346px;padding:40px 0 0 28px}
+.main .rightbox .rightbox_2 {border-left:1px solid #dadada;width:220px;height:140px;padding:10px 0 0 20px;margin-top:10px}
+.main .rightbox .rightbox_2 p{line-height:250%}
+.hotuser {width:265px;height:257px;float:left;border-right:1px solid #dadada;margin-left:20px;_margin-left:10px}
+.hottalk {width:365px;float:left}
+.userlist {width:255px;padding-left:3px}
+.userlist ul{list-style:none;}
+.userlist ul li {float:left;width:52px;height:75px;margin-right:10px;overflow:hidden;text-decoration:none;text-align:center}
+.userlist ul li img {width:48px;height:48px;border:1px solid #ccc;padding:1px}
+.userlist ul li a img { display:block;}
+.userlist ul li a {text-decoration:none;}
+.hottopic{padding:245px 0 0 140px;color:#ffffff;font-size:12px;width:530px;height:25px;overflow:hidden;}
+.hottopic a {color:#ffffff}
+.hottopic ul {list-style:none;overflow:hidden;}
+.hottopic ul li {float:left;margin-right:10px}
+.hotuserico {background:url('../images/laba.gif') no-repeat 0 3px;font-size:14px;border-bottom:1px dashed #cccccc;font-weight:bold;width:245px;margin-bottom:10px;padding-bottom:5px;text-indent:20px}
+.theysay {background:url('../images/homeview1.gif') no-repeat 0 3px;font-size:14px;border-bottom:1px dashed #cccccc;font-weight:bold;width:365px;margin-left:15px;margin-bottom:10px;padding-bottom:5px;text-indent:20px}
+.marqueegb {width:365px; height:220px; overflow:hidden;margin-left:15px}
+.marqueegb ul {list-style:none;}
+.marqueegb ul li {margin-bottom:10px}
+.indexgbli {width:365px;border-bottom:1px dashed #999999;padding-bottom:10px}
+.indexgbli img {border:1px solid #cccccc;width:50px;height:50px}
+.indexgbli .sp {color:#999999;margin-top:5px}
+.indexgbli .sp a {color:#999999}
+.clearline {clear:both}
+.button1 {border:0;background:url('../images/button-send.gif') no-repeat;width:115px;height:32px;text-align:center;font-size:14px;cursor:pointer;color:#000;}
+img.emo {width:20px;height:20px;border:0px}
+#indexbottom {width:950px;color:#2c5e65;text-align:center;margin-top:10px}
+.btn-reg {background:transparent url('../images/index_reg.gif') no-repeat left top;}
+.btn-reg { background-position:0 0; display:block;height:55px; width:197px; text-indent:-9999px; overflow:hidden; }
+.btn-reg:hover { background-position:0 -55px; }
+.btn-reg:active { background-position:0 -110px; }
+
+.ye_msg_window {padding:0;position:fixed; top:50%; left:50%; z-index:1100; width:250px;}
+* html .ye_msg_window {position:absolute;top:expression((offsetParent.scrollTop+document.documentElement.clientHeight-this.offsetHeight)/2); left:expression(document.documentElement.clientWidth/2);}
+.ye_msg_wrap {padding:10px 20px;border:1px solid #666;background-color:#fff; font-size:14px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;text-align:left;}
+.ye_msg_autoclose { height:20px; line-height:20px; color:#666; font-size:12px; text-align:left;}
+.ye_msg_ico_1,.ye_msg_ico_2,.ye_msg_ico_3,.ye_msg_ico_4,
+.ye_msg_ico_5 {background:#fff no-repeat 20px center;padding-left:90px;}
+.ye_msg_ico_1 {background-image:url('../images/dialog_msgtype_ico_1.gif');}
+.ye_msg_ico_2 {background-image:url('../images/dialog_msgtype_ico_2.gif');}
+.ye_msg_ico_3 {background-image:url('../images/dialog_msgtype_ico_3.gif');}
+.ye_msg_ico_4 {background-image:url('../images/dialog_msgtype_ico_4.gif');}
+.ye_msg_ico_5 {background-image:url('../images/dialog_msgtype_ico_5.gif');}

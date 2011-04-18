@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="BlogSettings"
+		table="blog_settings"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="ACCOUNT_ID"
+		>
+			<generator class="org.hibernate.id.Assigned"/>
+		</id>
+
+		<property
+			name="Language"
+			column="LANGUAGE"
+			type="java.lang.String"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="TimeZone"
+			column="TIME_ZONE"
+			type="java.lang.Byte"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="InfoPublic"
+			column="INFO_PUBLIC"
+			type="java.lang.String"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="UsedTheme"
+			column="USED_THEME"
+			type="java.lang.String"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="BackgroundImage"
+			column="BACKGROUND_IMAGE"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="Group"
+		table="group"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="GROUP_ID"
+		>
+			<generator class="identity"/>
+		</id>
+
+		<property
+			name="GroupName"
+			column="GROUP_NAME"
+			type="string"
+			not-null="true"
+			length="50"
+		/>
+		<property
+			name="SuffixUrl"
+			column="SUFFIX_URL"
+			type="string"
+			not-null="true"
+			length="50"
+		/>
+		<property
+			name="Description"
+			column="DESCRIPTION"
+			type="string"
+			not-null="false"
+			length="1000"
+		/>
+		<property
+			name="GroupIcon"
+			column="GROUP_ICON"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="CreateTime"
+			column="CREATE_TIME"
+			type="timestamp"
+			not-null="true"
+			length="19"
+		/>
+		<property
+			name="CreateAccountId"
+			column="CREATE_ACCOUNT_ID"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="GroupPublic"
+			column="GROUP_PUBLIC"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

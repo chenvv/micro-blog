@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="keywords" content="MicroBlog" /> 
+<meta name="description" content="MicroBlog by vivian" /> 
+<title>MicroBlog register page</title> 
+<link rel="shortcut icon" href="images/favicon.ico" /> 
+<script type="text/javascript">var etuser='{"siteurl":"http://t.o592.com","pubdir":"http://t.o592.com/Public","setok":"-1","my_uid":"","user_name":"","nickname":"","space":""}';var stalk='';var shorturl='http://goo.gl';</script> 
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/common.js"></script> 
+<script type="text/javascript" src="js/extends.js"></script> 
+<script type="text/javascript" src="js/ye_dialog.js"></script> 
+<link rel="stylesheet" type="text/css" href="css/highslide/highslide.css" /> 
+<link rel="stylesheet" type="text/css" href="css/style.css" /> 
+<!--[if lte IE 6]>
+<style type="text/css">
+#header .left{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='image',src='images/logo.png');background:none;cursor:pointer}
+#header .topmenubg{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='image',src='images/topmenu.png');background:none;}
+#navbg {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale',src='images/headbg.png');background:none;}
+#sidebar .homestabs .menu li .arrHover{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=image,src='images/sidemenuArr_over.png');background:none;}
+#sidebar .homestabs .menu li .arrCurt{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=image,src='images/sidemenuArr.png');background:none}
+#sidebar .sect {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale, src='images/dot.png');background:none;}
+.newst {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=image,src='images/newst.png');background:none;}
+</style>
+<![endif]--> 
+</head> 
+
+<body>
+<div id="container" class="newlook">
+<div id="header2">
+    <a href="http://t.o592.com/"><div class="left"></div></a>
+</div>
+<div class="clearline"></div>
+<div class="error">
+        <h2>Wrong Username/Email and password combination.</h2>
+    <h4 style="margin-top:10px"><a onclick="var len=history.length;if(len>1 || (len==1 && navigator.userAgent.indexOf('MSIE')!=-1)){history.go(-1);return false;}else{location.href='/'}" href="##">Go back!</a></h4>
+    <br/><p>Or go to</p>
+    <p>&nbsp;&nbsp;<a href="http://t.o592.com/">Main page</a></p>
+    </div>
+<div id="footer">Powered by vivian.&copy; 2011</div>
+</div>
+<div class="gotop"><button onclick="indextop();" title="Back to top"><span>Back to top</span></button></div>
+</body>
+</html>

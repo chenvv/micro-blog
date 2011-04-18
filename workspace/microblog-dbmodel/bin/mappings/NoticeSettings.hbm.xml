@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="NoticeSettings"
+		table="notice_settings"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="ACCOUNT_ID"
+		>
+			<generator class="org.hibernate.id.Assigned"/>
+		</id>
+
+		<property
+			name="FollowedNotice"
+			column="FOLLOWED_NOTICE"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="MessageNotice"
+			column="MESSAGE_NOTICE"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="SystemNotice"
+			column="SYSTEM_NOTICE"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="RepliedNotice"
+			column="REPLIED_NOTICE"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="FollowNewNotice"
+			column="FOLLOW_NEW_NOTICE"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="FollowJoinNotice"
+			column="FOLLOW_JOIN_NOTICE"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="GroupInviteNotice"
+			column="GROUP_INVITE_NOTICE"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="src" path="tester"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jsash"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/microblog-dbmodel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/microblog-messages"/>
+	<classpathentry kind="lib" path="/microblog-dbmodel/lib/hibernate3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/microblog-dbmodel/lib/required/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="/microblog-dbmodel/lib/required/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="/microblog-dbmodel/lib/required/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/microblog-dbmodel/lib/required/javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="/microblog-dbmodel/lib/required/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="/microblog-dbmodel/lib/required/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="/microblog-dbmodel/lib/mysql-connector-java-5.1.13-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

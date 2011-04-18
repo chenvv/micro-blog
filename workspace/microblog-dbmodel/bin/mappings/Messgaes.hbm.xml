@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="Messgaes"
+		table="messgaes"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="MESSAGE_ID"
+		>
+			<generator class="identity"/>
+		</id>
+
+		<property
+			name="AddresseeId"
+			column="ADDRESSEE_ID"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="AuthorId"
+			column="AUTHOR_ID"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="MessageContent"
+			column="MESSAGE_CONTENT"
+			type="string"
+			not-null="true"
+			length="280"
+		/>
+		<property
+			name="CreateTime"
+			column="CREATE_TIME"
+			type="timestamp"
+			not-null="true"
+			length="19"
+		/>
+		<property
+			name="ReadedFlag"
+			column="READED_FLAG"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="RepliedFlag"
+			column="REPLIED_FLAG"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

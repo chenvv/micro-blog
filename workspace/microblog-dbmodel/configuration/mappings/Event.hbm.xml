@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="Event"
+		table="event"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="EVENT_ID"
+		>
+			<generator class="identity"/>
+		</id>
+
+		<property
+			name="AddressId"
+			column="ADDRESS_ID"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="EventType"
+			column="EVENT_TYPE"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="EventQuantity"
+			column="EVENT_QUANTITY"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

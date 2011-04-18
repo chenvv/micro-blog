@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="GroupUsers"
+		table="group_users"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="GROUP_ID"
+		>
+			<generator class="org.hibernate.id.Assigned"/>
+		</id>
+
+		<property
+			name="AccountId"
+			column="ACCOUNT_ID"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="Admin"
+			column="ADMIN"
+			type="boolean"
+			not-null="false"
+			length="3"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

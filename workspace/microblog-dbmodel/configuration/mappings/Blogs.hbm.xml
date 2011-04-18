@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="vivian.jsash.microblog.dbmodel.dao">
+	<class
+		name="Blogs"
+		table="blogs"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="BLOG_ID"
+		>
+			<generator class="identity"/>
+		</id>
+
+		<property
+			name="CreateAccountId"
+			column="CREATE_ACCOUNT_ID"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="GroupBlog"
+			column="GROUP_BLOG"
+			type="boolean"
+			not-null="true"
+			length="3"
+		/>
+		<property
+			name="GroupId"
+			column="GROUP_ID"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="BlogContent"
+			column="BLOG_CONTENT"
+			type="string"
+			not-null="true"
+			length="280"
+		/>
+		<property
+			name="ReplyBlogId"
+			column="REPLY_BLOG_ID"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="ForwardBlogId"
+			column="FORWARD_BLOG_ID"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="RepliedCount"
+			column="REPLIED_COUNT"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="ForwardedCount"
+			column="FORWARDED_COUNT"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="CreateTime"
+			column="CREATE_TIME"
+			type="timestamp"
+			not-null="true"
+			length="19"
+		/>
+
+
+	</class>	
+</hibernate-mapping>
