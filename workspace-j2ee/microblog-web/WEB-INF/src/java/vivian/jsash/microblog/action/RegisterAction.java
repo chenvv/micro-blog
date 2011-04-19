@@ -30,7 +30,7 @@ public class RegisterAction extends MicroblogSupport {
 		
 		RegisterRequest req = new RegisterRequest();
 		req.setUserName( getUsername() );
-		req.setPassword( getUsername() );
+		req.setPassword( getPassword() );
 		req.setEmailAddr( getEmail() );
 		req.setQuestion( getQuestion() );
 		req.setAnswer( getAnswer() );

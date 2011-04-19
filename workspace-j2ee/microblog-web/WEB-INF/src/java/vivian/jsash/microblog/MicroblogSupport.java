@@ -33,10 +33,12 @@ public abstract class MicroblogSupport extends ActionSupport {
 	protected Cookie[] cookies = httpRequest.getCookies();
 	
 	protected boolean isLogined() {
-		for( Cookie cookie : cookies ) {
-			if( cookie.getName().equals(TextResource.LOGIN_FLAG_NAME) && 
-					cookie.getValue().equals(TextResource.TRUE_VALUE) ) {
-				return true;
+		if( cookies != null ) {
+			for( Cookie cookie : cookies ) {
+				if( cookie.getName().equals(TextResource.LOGIN_FLAG_NAME) && 
+						cookie.getValue().equals(TextResource.TRUE_VALUE) ) {
+					return true;
+				}
 			}
 		}
 		return false;

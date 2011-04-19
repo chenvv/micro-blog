@@ -42,6 +42,9 @@ public class RegisterHandler extends BaseHandler {
 		account.setAccountName(req.getUserName());
 		account.setAccountPassword( MD5Encoder.encode(req.getPassword()) );
 		account.setCreateTime( new Date(System.currentTimeMillis()) );
+		account.setBlogCount(0);
+		account.setFollowCount(0);
+		account.setFollowedCount(0);
 		AccountInfo ai = new AccountInfo();
 		Transaction tx = null;
 		try {

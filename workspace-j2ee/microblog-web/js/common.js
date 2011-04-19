@@ -729,7 +729,7 @@ function check_register() {
         ye_msg.open("Only use letters, numbers and '_'",5,2);
         return false;
     }
-    $.getJSON(siteurl+"Register",{/*invitecode:t0,*/username:t1,email:t2,password:t3,repassword:t4,/*inviteuid:t5*/},
+    $.getJSON(siteurl+"Register_Register",{/*invitecode:t0,*/username:t1,email:t2,password:t3,repassword:t4,/*inviteuid:t5*/},
     function(obj){
         if( "success" == obj.result ) {
 			ye_dialog.openHtml("<div class='regok'>Sign up OK. The next step.  </div>",'Sign up',400,100);
